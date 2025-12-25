@@ -1,0 +1,12 @@
+.seo-content {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: right;
+  line-height: 1.9;
+  font-size: 15px;
+}
+
+.seo-content h2 {
+  margin-top: 30px;
+  font-size: 18px;
+}
