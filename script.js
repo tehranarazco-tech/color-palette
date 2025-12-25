@@ -1,5 +1,4 @@
-<script src="https://unpkg.com/chroma-js@2.4.2/chroma.min.js"></script>
-<script src="script.js"></script>
+
 
 const baseColorInput = document.getElementById("baseColor");
 const paletteTypeSelect = document.getElementById("paletteType");
