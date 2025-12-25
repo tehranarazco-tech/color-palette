@@ -38,6 +38,7 @@ function generatePalette() {
     const div = document.createElement("div");
     div.className = "color-box";
     div.style.background = color;
+    div.style.color = chroma(color).luminance() > 0.5 ? "#000" : "#fff";
     div.innerText = color;
 
     div.onclick = () => {
