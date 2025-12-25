@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+
+  <title>ساخت پالت رنگ فارسی | ابزار انتخاب و ترکیب رنگ آنلاین</title>
+
+  <meta name="description" content="ابزار ساخت پالت رنگ فارسی، انتخاب رنگ و ترکیب رنگ برای طراحی سایت، لوگو و رابط کاربری. دریافت کد HEX رنگ‌ها به‌صورت آنلاین و رایگان.">
+
+  <meta name="keywords" content="ساخت پالت رنگ, ابزار انتخاب رنگ, ترکیب رنگ, پالت رنگ فارسی, کد رنگ hex">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <h1>ساخت پالت رنگ فارسی</h1>
+    <p class="subtitle">
+      ابزار آنلاین انتخاب رنگ و ترکیب رنگ برای طراحان سایت، گرافیست‌ها و تولیدکنندگان محتوا
+    </p>
+  </header>
+
+  <main>
+
+    <section class="controls">
+      <input type="color" id="baseColor" value="#3f51b5" aria-label="انتخاب رنگ پایه">
+      <select id="paletteType" aria-label="نوع پالت رنگ">
+        <option value="monochrome">پالت رنگ مونوکروم</option>
+        <option value="complement">پالت رنگ مکمل</option>
+        <option value="analogous">پالت رنگ مشابه</option>
+        <option value="triad">پالت رنگ سه‌گانه</option>
+      </select>
+      <button onclick="generatePalette()">ساخت پالت رنگ</button>
+    </section>
+
+    <section id="palette" class="palette" aria-label="نمایش پالت رنگ"></section>
+
+    <!-- محتوای متنی مخصوص سئو -->
+    <section class="seo-content">
+      <h2>ابزار انتخاب و ترکیب رنگ چیست؟</h2>
+      <p>
+        ابزار ساخت پالت رنگ به شما کمک می‌کند تا ترکیب رنگ‌های هماهنگ و حرفه‌ای برای طراحی سایت،
+        رابط کاربری، لوگو و بنرهای گرافیکی ایجاد کنید. این ابزار به‌صورت آنلاین و رایگان در دسترس است.
+      </p>
+
+      <h2>ساخت پالت رنگ برای طراحی سایت</h2>
+      <p>
+        انتخاب رنگ مناسب در طراحی سایت اهمیت زیادی دارد. با استفاده از این ابزار می‌توانید
+        پالت رنگ مونوکروم، مکمل، مشابه و سه‌گانه بسازید و کد HEX هر رنگ را کپی کنید.
+      </p>
+
+      <h2>چرا از پالت رنگ آماده استفاده کنیم؟</h2>
+      <p>
+        استفاده از پالت رنگ آماده باعث هماهنگی بصری، افزایش خوانایی و بهبود تجربه کاربری می‌شود.
+        این ابزار مخصوص کاربران فارسی‌زبان طراحی شده و کاملاً ساده و کاربردی است.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>
+      ابزار ساخت پالت رنگ فارسی – انتخاب رنگ و ترکیب رنگ آنلاین
+    </p>
+  </footer>
+
+  <script src="https://unpkg.com/chroma-js@2.4.2/chroma.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
