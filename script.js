@@ -1,3 +1,12 @@
+
+const colorInputs = document.querySelectorAll('.palette input[type="color"]');
+const hexOutputs = document.querySelectorAll('.output p');
+
+colorInputs.forEach((input, index) => {
+    input.addEventListener('input', () => {
+        hexOutputs[index].textContent = input.value;
+    });
+});
 function generatePalette() {
   const baseColor = document.getElementById("baseColor").value;
   const type = document.getElementById("paletteType").value;
