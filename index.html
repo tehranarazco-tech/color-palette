@@ -1,44 +1,36 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>ساخت پالت رنگ فارسی | ابزار انتخاب و ترکیب رنگ</title>
+  <meta name="description" content="ابزار فارسی ساخت پالت رنگ، انتخاب رنگ و ترکیب رنگ برای طراحی سایت و گرافیک">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600&display=swap" rel="stylesheet">
+</head>
 <body>
 
-<header>
-  <h1>ساخت پالت رنگ فارسی</h1>
-  <p class="subtitle">
-    ابزار آنلاین انتخاب رنگ و ترکیب رنگ برای طراحان سایت
-  </p>
-</header>
+  <h1>🎨 ابزار ساخت پالت رنگ فارسی</h1>
+  <p class="subtitle">انتخاب رنگ و ساخت پالت رنگ برای طراحی سایت و گرافیک</p>
 
-<main>
+  <div class="controls">
+    <input type="color" id="baseColor" value="#3f51b5">
+    <select id="paletteType">
+      <option value="monochrome">مونوکروم</option>
+      <option value="complement">مکمل</option>
+      <option value="analogous">مشابه</option>
+      <option value="triad">سه‌گانه</option>
+    </select>
+    <button onclick="generatePalette()">ساخت پالت</button>
+  </div>
 
-   <section class="controls">
+  <div id="palette" class="palette"></div>
 
-  <input
-    type="color"
-    id="baseColor"
-    value="#3f51b5"
-    aria-label="انتخاب رنگ پایه"
-  >
+  <footer>
+    <p>ابزار رایگان ترکیب رنگ – مناسب طراحان فارسی‌زبان</p>
+  </footer>
 
-  <select id="paletteType" aria-label="نوع پالت رنگ">
-    <option value="monochrome">مونوکروم</option>
-    <option value="complement">مکمل</option>
-    <option value="analogous">مشابه</option>
-    <option value="triad">سه‌گانه</option>
-  </select>
-
-</section>
-
-  </section>
-
-  <section id="palette" class="palette"></section>
-
-  <section class="seo-content">
-    ...
-  </section>
-
-</main>
-
-<footer>
-  ...
-</footer>
-
+  <script src="https://unpkg.com/chroma-js@2.4.2/chroma.min.js"></script>
+  <script src="script.js"></script>
 </body>
+</html>
