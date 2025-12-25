@@ -9,8 +9,24 @@
 
 <main>
 
-  <section class="controls">
-    ...
+   <section class="controls">
+
+  <input
+    type="color"
+    id="baseColor"
+    value="#3f51b5"
+    aria-label="انتخاب رنگ پایه"
+  >
+
+  <select id="paletteType" aria-label="نوع پالت رنگ">
+    <option value="monochrome">مونوکروم</option>
+    <option value="complement">مکمل</option>
+    <option value="analogous">مشابه</option>
+    <option value="triad">سه‌گانه</option>
+  </select>
+
+</section>
+
   </section>
 
   <section id="palette" class="palette"></section>
