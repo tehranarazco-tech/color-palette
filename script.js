@@ -1,10 +1,17 @@
+const baseColorInput = document.getElementById("baseColor");
+const paletteTypeSelect = document.getElementById("paletteType");
+
+baseColorInput.addEventListener("input", generatePalette);
+paletteTypeSelect.addEventListener("change", generatePalette);
+
+generatePalette();
+
 function generatePalette() {
-  const baseColor = document.getElementById("baseColor").value;
-  const type = document.getElementById("paletteType").value;
+  const baseColor = baseColorInput.value;
+  const type = paletteTypeSelect.value;
   const paletteDiv = document.getElementById("palette");
 
   paletteDiv.innerHTML = "";
-
   let colors = [];
 
   if (type === "monochrome") {
@@ -38,12 +45,15 @@ function generatePalette() {
     const div = document.createElement("div");
     div.className = "color-box";
     div.style.background = color;
-    div.style.color = chroma(color).luminance() > 0.5 ? "#000" : "#fff";
-    div.innerText = color;
+    div.style.color =
+      chroma(color).luminance() > 0.5 ? "#000" : "#fff";
+
+    div.innerHTML = `
+      <span>${color}</span>
+    `;
 
     div.onclick = () => {
       navigator.clipboard.writeText(color);
-      alert("کپی شد: " + color);
     };
 
     paletteDiv.appendChild(div);
